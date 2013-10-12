@@ -12,16 +12,13 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
     LatinImeDictionaryPack \
-    mGerrit \
     Microbes \
     PermissionsManager \
     ROMControl \
     Stk \
     Superuser \
     su \
-    SwagPapers \
-    Torch \
-    UnicornPorn
+    Torch
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -80,6 +77,13 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 
 # Inherit common build.prop overrides
 -include vendor/aokp/configs/common_versions.mk
+
+# Custom CM packages
+PRODUCT_PACKAGES += \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf \
+    LockClock
 
 # T-Mobile theme engine
 -include vendor/aokp/configs/themes_common.mk
