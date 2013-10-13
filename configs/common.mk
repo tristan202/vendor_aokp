@@ -54,18 +54,28 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 PRODUCT_PACKAGES += \
-    openvpn \
     e2fsck \
-    mke2fs \
-    tune2fs \
+    fsck.exfat \
     libssh \
+    mke2fs \
+    mkfs.exfat \
+    mount.exfat \
+    ntfsfix \
+    ntfs-3g \
+    openvpn \
+    scp \
+    sftp \
     ssh \
     sshd \
     sshd_config \
     ssh-keygen \
+<<<<<<< HEAD
     start-ssh \
     sftp \
     scp
+=======
+    tune2fs
+>>>>>>> upstream/jb-mr1
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
